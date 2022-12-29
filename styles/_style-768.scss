@@ -1,0 +1,94 @@
+@media (width < 1270px) {
+
+  ._container {
+    padding: 0 calc((100% - 768px) / 2);
+  }
+
+  .hero {
+    width: 60%;
+    padding-top: 200px;
+  }
+
+  .info {
+    height: 500px;
+    padding: 2% 0% 2% 22%;
+    .info-right {
+      padding: 30px 5px;
+    }
+    .info-list {
+      gap: 30px;
+      padding: 0 36px
+    }
+    .text_num {
+      @include title-font(50px, 60px);
+      gray {
+        @include title-font(32px, 40px);
+        color: #E4E4E4;
+      }
+    }
+    .info-article {
+      width: 55%;
+      .text {
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .quote {
+    height: 350px;
+    padding: 80px 80px 50px 120px;
+    .text {
+      font-size: 28px;
+      line-height: 36px;
+      &::before {
+        width: 80px;
+      }
+    }
+  }
+
+  .video {
+    padding: 0 50px;
+    .screen {
+      max-height: 400px;
+    }
+  }
+
+  .promises {
+    height: 450px;
+    padding: 2% 0% 2% 22%;
+    .promises-right {
+      gap: 30px;
+    }
+    .btn {
+      padding-left: 60px;
+      padding-right: 60px;
+      &::after {
+        left: 67px;
+      }
+    }
+  }
+
+  .reviews {
+    .reviews-items {
+      gap: 10px;
+    }
+    .review-item {
+      height: 280px;
+      padding: 10px;
+      .text {
+        line-height: 20px;
+      }
+      .author {
+        bottom: 10px;
+        left: 15px;
+      }
+    }
+  }
+
+  .contacts {
+    gap: 20px;
+    form {
+      width: 50%;
+    }
+  }
+}

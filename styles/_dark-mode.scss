@@ -1,0 +1,76 @@
+body:has(#toggle:checked) {
+  background: url("/images/bg-dark.png"), #161926;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .nav-menu__item {
+    color: white;
+    &:hover::after {
+      background: linear-gradient(96.73deg, #53F3CD 6.73%, rgba(83, 243, 205, 0) 116.9%);
+      opacity: 0.3;
+    }
+  }
+
+  .title {
+    color: white;
+    i {
+      color: #689FF2;
+    }
+  }
+
+  .text, .text_num, .sublitle, .footer {
+    color: white;
+  }
+
+  .btn {
+    color: #53F3CD;
+    &::after {
+      background-color: #53F3CD;
+      opacity: 0.3;
+    }
+    &:hover {
+      color: #02E0AB;
+      &::after {
+        background-color: #02E0AB;
+      }
+    }
+  }
+
+  .info-right, .promises-right {
+    background: #161926;
+    opacity: 0.9;
+  }
+
+  .info {
+    hr {
+      border-bottom: 1px solid #689FF2;
+    }
+  }
+
+  .benefits-item::before {
+    background-color: rgba(81, 87, 115, 1);
+  }
+
+  .promises {
+    .btn {
+      border-color: #515773;
+      &:hover {
+        border-color: #02E0AB;
+      }
+    }
+  }
+
+  .contacts, .screen, .screen::after, input {
+    border-color: rgba(81, 87, 115, 1);
+  }
+
+  .contacts {
+    form {
+      input {
+        background-color: #161926;
+        color: white;
+      }
+    }
+  }
+}
