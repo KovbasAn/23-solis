@@ -133,7 +133,7 @@ body:has(#toggle:checked) .contacts form input {
 }
 
 body {
-  background: url("/images/bg.png");
+  background: url("../images/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
